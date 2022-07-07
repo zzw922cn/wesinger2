@@ -3,7 +3,7 @@
  - File              : index.html
  - Author            : none
  - Date              : 06.03.2022
- - Last Modified Date: 06.07.2022
+ - Last Modified Date: 07.07.2022
  - Last Modified By  : none <none>
 -->
 
@@ -17,13 +17,13 @@
 
 <article>
     <header>
-        <h1>Singing demos for paper 《WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training》</h1>
+        <h1>Synthesized singing voice demos for paper 《WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training》</h1>
     </header>
 </article>
 <hr>
 
 <div><h3><b>Paper</b> </h3>
-<div> <blockquote> WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training [<a href="https://arxiv.org/pdf/2207.01886.pdf">arxiv</a>]</blockquote> </div>
+<div> <blockquote> WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training [<a href="https://arxiv.org/pdf/2207.01886.pdf">arxiv link</a>]</blockquote> </div>
 <div><h3><b>Authors</b> </h3>
 <blockquote> <div>Zewang Zhang, Yibin Zheng, Xinhui Li, Li Lu</div> </blockquote>
 <div><h3><b>Abstract</b> </h3>
@@ -41,7 +41,485 @@
 .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
 </style>
 
-<h3 id="samples1">Selected synthesized singing voices will be uploaded soon... </h3>
+<h2 id="GT"><font color="black">Selected ground-truth (GT) recordings of three singers for experiments</font></h2>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Singer Name</b></th>
+      <th class="tg-lboi"><font color="blue">Data-L</font></th>
+      <th class="tg-lboi"><font color="blue">Data-S</font></th>
+      <th class="tg-lboi"><font color="blue">Opencpop</font></th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">后来 我总算学会了如何去爱</br>可惜你 早已远去 消失在人海</th>
+      <th class="tg-lboi">没有你的冬天 我会一直唱着</br>唱着 直到你出现</th>
+      <th class="tg-lboi">一双围在我胸口的臂弯 足够</br>抵挡天旋地转</th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b>GT Recordings</b></th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="recordings/Data-L.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="recordings/Data-S.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="recordings/Opencpop.wav">
+		</audio>
+	</td>
+  </tr>
+
+</table>
+
+</blockquote>
+
+<h2 id="title"><font color="black">Following singing voices are all predicted on the test set from SVS systems with Chinese lyrics and musical scores as input.</font></h2>
+
+<h3 id="pred-dur"><font color="#0DC23E">1. Selected predicted samples with ground-truth duration from WeSinger and WeSinger 2</font></h3>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Singer Name</b></th>
+      <th class="tg-lboi"><font color="blue">Data-L</font></th>
+      <th class="tg-lboi"><font color="blue">Data-S</font></th>
+      <th class="tg-lboi"><font color="blue">Opencpop</font></th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>《后来》片段<br/></br></b>
+          栀子花 白花瓣 落在我蓝色百褶裙上</br>
+          爱你你轻声说 我低下头闻见一阵芬芳</br>
+          那个永恒的夜晚 十七岁仲夏 你吻我的那个夜晚</br>
+          让我往后的时光 每当有感叹 总想起当天的星光</br>
+          那时候的爱情 为什么就能那样简单 而又是为什么</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《后来》片段<br/></br></b>
+          总想起当天的星光 那时候的爱情</br>
+          为什么就能那样简单 而又是为什么</br>
+          人年少时 一定要让深爱的人受伤</br>
+          在这相似的深夜里 你是否一样</br>
+          也在静静追悔感伤 如果当时我们能不那么倔强</br>
+          现在也不那么遗憾 你都如何回忆我</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《给我一首歌的时间》片段<br/></br></b>
+          能不能给我一首歌的时间 紧紧的把那拥抱变成永远</br>
+          在我的怀里你不用害怕失眠 如果你想忘记我也能失忆</br>
+          能不能给我一首歌的时间 把故事听到最后才说再见</br>
+          你送我的眼泪让它留在雨天 越过你划的线我定了勇气的终点</br>
+      </th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi">WeSinger</th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Data-L-wesinger-demo1.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Data-S-wesinger-demo1.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Opencpop-wesinger-demo1.wav">
+		</audio>
+	</td>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b>WeSinger 2</b></th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Data-L-wesinger2-demo1.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Data-S-wesinger2-demo1.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="comparative/Opencpop-wesinger2-demo1.wav">
+		</audio>
+	</td>
+  </tr>
+
+</table>
+
+</blockquote>
+
+
+<h3 id="pred-dur"><font color="#0DC23E">2. Selected predicted samples with ground-truth duration from WeSinger 2</font></h3>
+<blockquote>
+
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>《传奇》片段<br/></br></b>
+          只是因为在人群中多看了你一眼</br>
+          再也没能忘掉你容颜</br>
+          梦想着偶然能有一天再相见</br>
+          从此我开始孤单思念</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《匆匆那年》片段<br/></br></b>
+          匆匆那年我们 究竟说了几遍 再见之后再拖延</br>
+          可惜谁有没有 爱过不是一场 七情上面的雄辩</br>
+          匆匆那年我们 一时匆忙撂下 难以承受的诺言</br>
+          只有等别人兑现 不怪那吻痕还 没积累成茧</br>
+          拥抱着冬眠也没能 羽化再成仙</br>
+          不怪这一段情 没空反复再排练</br>
+          是岁月宽容恩赐 反悔的时间</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《画心》片段<br/></br></b>
+          啦啦啦啦啦啦啦啦啦 啦啦啦啦啦啦啦啦啦</br>
+          啦啦啦啦啦啦 啦啦啦啦啦啦啦</br>
+          啦啦啦啦啦啦啦啦啦啦</br>
+          看不穿 是你失落的魂魄 猜不透 是你瞳孔的颜色</br>
+          一阵风 一场梦 爱如生命般莫测</br>
+          你的心到底被什么蛊惑</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《空山新雨后》片段<br/></br></b>
+          山风轻摆尾 卷下落花随流水</br>
+          路过 擦拭曾经 用你柔情 换我的眼泪</br>
+          当爱恨都败退 没谢幕的人啊</br>
+          井中月 举杯砸碎 佐一场宿醉</br>
+          抽签的玫瑰 作熏香还能余味</br>
+          猜测无解答案 算了满地 也是种浪费</br>
+          我才终于明白 终于明白 不能被施舍的是爱</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《芒种》片段<br/></br></b>
+          一想到你我就 呼 空恨别梦久 呜</br>
+          烧去纸灰埋烟柳 于鲜活的枝丫</br>
+          凋零下的无暇 是收获谜底的代价</br>
+          余晖沾上 远行人的发 他洒下手中牵挂于桥下</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《默》片段<br/></br></b>
+          我被爱判处终身孤寂 不还手 不放手</br>
+          笔下画不完的圆 心间填不满的缘 是你</br>
+          为何爱判处众生孤寂 挣不脱 逃不过</br>
+          眉头解不开的结 命中解不开的劫 是你</br>
+      </th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b><font color="blue">Data-L</font></b></th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs001-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs002-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs006-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs007-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs008-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Data-L-test19songs009-GTdur.wav">
+		</audio>
+	</td>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>《漠河舞厅》片段<br/></br></b>
+          如果有时间 你会来看一看我吧</br>
+          看大雪如何衰老的 我的眼睛如何融化</br>
+          如果你看见我的话 请转过身去再惊讶</br>
+          我怕我的眼泪 我的白发像羞耻的笑话</br>
+          我从没有见过极光出现的村落</br>
+          也没有见过有人 在深夜放烟火</br>
+          晚星就像你的眼睛杀人又放火</br>
+          你什么都不必说 野风惊扰我</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《最初的梦想》片段<br/></br></b>
+          如果骄傲没被现实大海冷冷拍下</br>
+          又怎会懂得要多努力才走得到远方</br>
+          如果梦想不曾坠落悬埃千钧一发</br>
+          又怎会晓得执着的人 拥有隐形翅膀</br>
+          把眼泪种在心上 会开出勇敢的花</br>
+          可以在疲惫的时光 闭上眼睛闻到一种芬芳</br>
+          就像好好睡了一夜直到天亮</br>
+          又能边走着边哼着歌 用轻快的步伐</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《小半》片段<br/></br></b>
+          灯火阑珊 我的心借了你的光是明是暗</br>
+          笑自己情绪太泛滥形只影单</br>
+          自嘲成习惯 多敏感又难缠</br>
+          低头呢喃 嗯对你的偏爱太过于明目张胆</br>
+          在原地打转的小丑伤心不断</br>
+          空空留遗憾 多难堪又为难</br>
+          释然 慵懒 尽欢</br>
+          时间风干后你与我再无关</br>
+          没答案 怎么办 看不惯我自我欺瞒</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《相见恨晚》片段<br/></br></b>
+          看着天空不让泪流下 不说一句埋怨</br>
+          只是心中的感慨万千 当作前世来生相欠</br>
+          你说 是我们相见恨晚 我说 为爱你不够勇敢</br>
+          我不奢求永远 永远太遥远 却陷在爱的深渊</br>
+          你说 是我们相见恨晚 我说 为爱你不够勇敢</br>
+          在爱与不爱间 来回千万遍</br>
+          哪怕已伤痕累累 我也不管~~</br>
+          你说 是我们相见恨晚 我说 为爱你不够勇敢</br>
+          我不奢求永远 永远太遥远 却陷在爱的深渊</br>
+          你说 是我们相见恨晚 我说 为爱你不够勇敢</br>
+          在爱与不爱间 来回千万遍 哪怕已伤痕累累</br>
+          我也不管 哈~~</br>
+      </th>
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b><font color="blue">Opencpop</font></b></th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Opencpop-test19songs019-GTdur.wav">
+		</audio>
+	</td>
+
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Opencpop-test19songs018-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Opencpop-test19songs014-GTdur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="gt-dur-short/Opencpop-test19songs013-GTdur.wav">
+		</audio>
+	</td>
+  </tr>
+
+</table>
+
+</blockquote>
+
+<h3 id="pred-dur"><font color="#0DC23E">3. Selected predicted samples with predicted duration from WeSinger 2</font></h3>
+<b>To show the robustness and performance, here we do not use ground-truth duration for length-regulator, we use predicted duration instead.</b>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>《我的歌声里》片段<br/></br></b>
+          没有一点点防备 也没有一丝顾虑</br>
+          你就这样出现在我的世界里</br>
+          带给我惊喜 情不自已 可是你偏又这样</br>
+          在我不知不觉中 悄悄的消失</br>
+          从我的世界里 没有音讯 剩下的只是回忆</br>
+          你存在 我深深的脑海里</br>
+          我的梦里 我的心里 我的歌声里</br>
+          你存在 我深深的脑海里</br>
+          我的梦里 我的心里 我的歌声里</br>
+      </th>
+      <th class="tg-lboi">
+          <b>《小半》片段<br/></br></b>
+          不敢回看 左顾右盼不自然的暗自喜欢</br>
+          偷偷搭讪总没完地坐立难安 试探说晚安 多空泛又心酸</br>
+          低头呢喃 对你的偏爱太过于明目张胆 在原地打转的小丑伤心不断</br>
+          空空留遗憾 多难堪又为难 释然 慵懒 尽欢</br>
+          时间风干后你我再无关 没答案 怎么办 看不惯自我欺瞒</br>
+          纵容着 喜欢的 讨厌的 宠溺的 厌倦的 一个个慢慢黯淡</br>
+          纵容着 任性的 随意的 放肆的 轻易的 将所有欢脱倾翻</br>
+          不应该 太心软 不大胆 太死板 不果断 玩弄着肆无忌惮</br>
+          不应该 舍弃了 死心了 放手了 断念了 无可奈何不耐烦</br>
+          不算</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《遇见》片段<br/></br></b>
+          听见 冬天 的离开 我在某年某月醒过来</br>
+          我想 我等 我期待 未来却不能因此安排</br>
+          阴天 傍晚 车窗外 未来有一个人在等待</br>
+          向左 向右 向前看 爱要拐几个弯才来</br>
+          我遇见谁会有怎样的对白 我等的人他在多远的未来</br>
+          我听见风来自地铁和人海 我排著队拿著爱的号码牌</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《最初的梦想》片段<br/></br></b>
+          沮丧时总会明显感到孤独的重量<br/>
+          多渴望懂得的人给些温暖借个肩膀</br>
+          很高兴一路上 我们的默契那么长 穿过风又绕了弯</br>
+          心还连着像往常一样 最初的梦想紧握在手上 最想要去的地方</br>
+          怎么能在半路就返航 最初的梦想绝对会到达 实现了真的渴望</br>
+          才能够算到过了天堂</br>
+      </th>
+
+      <th class="tg-lboi">
+          <b>《年轮》片段<br/></br></b>
+          数着一圈圈年轮 我认真 将心事都封存<br/>
+          密密麻麻是我的自尊</br>
+          修改一次次离分 我承认 曾幻想过永恒<br/>
+          可惜从没人陪我演这剧本</br>
+          圆圈勾勒成指纹 印在我的嘴唇 回忆苦涩的吻痕 是树根</br>
+          春去秋来的茂盛 却遮住了黄昏 寒夜剩我一个人 等清晨</br>
+          世间最毒的仇恨 是有缘却无分 可惜你从未心疼 我的笨</br>
+          荒草丛生的青春 倒也过的安稳 代替你陪着我的 是年轮</br>
+      </th>
+
+  </tr>
+
+  <tr>
+      <th class="tg-lboi"><b><font color="blue">Data-L</font></b></th>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="pred-dur-short/Data-L-test19songs012-pred-dur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="pred-dur-short/Data-L-test19songs014-pred-dur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="pred-dur-short/Data-L-test19songs017-pred-dur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="pred-dur-short/Data-L-test19songs018-pred-dur.wav">
+		</audio>
+	</td>
+    <td class="tg-lboi">
+		<audio controls style="width: 140px;">
+			<source src="pred-dur-short/Data-L-test19songs020-pred-dur.wav">
+		</audio>
+	</td>
+  </tr>
+
+</table>
+
+</blockquote>
+
+<h3 id="pred-dur"><font color="#0DC23E">4. Selected predicted samples with predicted duration and BGM from WeSinger 2</font></h3>
+<b>To show the robustness and performance, here we do not use ground-truth duration for length-regulator, we use predicted duration to match BGM instead.</b>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>《莫斯科没有眼泪》+ BGM</br></b>
+          冬天的离别 在莫斯科的深夜 一列列军队 在街上森严戒备 这里没人察觉 谁又爱上了谁 因为苦难不许人崩溃</br>
+          感情上若习惯防备 寂寞就多一道墙围 爱情隐隐约约 提醒我这一回 再不拥抱就是罪 莫斯科没有眼泪 大雪纷飞</br>
+          你冷的好憔悴 单身的我 原本以为 可以一辈子不跟谁 莫斯科没有眼泪 我却流泪 不住哭的赞美 让我付出不怕心碎 是你最好的美</br>
+          莫斯科没有眼泪 我却流泪 不住哭的赞美 让我付出不怕心碎 是你最好的美 爱在最古老的国界 再不求能全身而退</br>
+      </th>
+  </tr>
+
+  <tr>
+        <th class="tg-lboi"><b><font color="blue">Data-L</font></b></th>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="user-defined/mskmyyl_pred_dur_bgm.wav">
+            </audio>
+        </td>
+
+  </tr>
+
+</table>
+</blockquote>
+
+
+<h3 id="pred-dur"><font color="#0DC23E">5. Only for research use: user-modified lyrics and musical scores with predicted duration from WeSinger 2</font></h3>
+<b>To show the robustness and performance, here we do not use ground-truth duration for length-regulator, we use predicted duration to match BGM instead.</b>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Lyrics</b></th>
+      <th class="tg-lboi">
+          <b>user-modified case 1</br></b></br>
+          ji shi wan shang shui shuo</br>
+          zai di qiu ling yi duan</br>
+          ruo neng gou gei bi ye shen me dou hui zhi de qu zuo</br>
+      </th>
+      <th class="tg-lboi">
+          <b>user-modified case 2</br></b></br>
+          ji shi wan shang shui shuo</br>
+          zai <b><font color="blue">di qiu de</font></b> ling yi duan</br>
+          ruo neng gou gei bi ye shen me dou hui<b><font color="blue"> xiang qu zuo</font></b></br>
+      </th>
+      <th class="tg-lboi">
+          <b>user-modified whole song + BGM</br></b></br>
+      </th>
+  </tr>
+
+  <tr>
+        <th class="tg-lboi"><b><font color="blue">Data-L</font></b></th>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="user-defined/jda1.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="user-defined/jda2.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="user-defined/jda-adbb.wav">
+            </audio>
+        </td>
+  </tr>
+
+</table>
+</blockquote>
+
 
 <h3> <br/></h3>
 <hr>
