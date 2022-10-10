@@ -3,7 +3,7 @@
  - File              : index.html
  - Author            : none
  - Date              : 06.03.2022
- - Last Modified Date: 07.07.2022
+ - Last Modified Date: 10.10.2022
  - Last Modified By  : none <none>
 -->
 
@@ -23,12 +23,13 @@
 <hr>
 
 <div><h3><b>Paper</b> </h3>
-<div> <blockquote> WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training [<a href="https://arxiv.org/pdf/2207.01886.pdf">arxiv link</a>]</blockquote> </div>
+    <div> <blockquote> WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training </blockquote></div>
+    <div> <blockquote> [<a href="https://arxiv.org/abs/2207.01886">arxiv link</a>]</blockquote> </div>
 <div><h3><b>Authors</b> </h3>
 <blockquote> <div>Zewang Zhang, Yibin Zheng, Xinhui Li, Li Lu</div> </blockquote>
 <div><h3><b>Abstract</b> </h3>
 <blockquote>
-<div>This paper aims to introduce a robust singing voice synthesis (SVS) system to produce high-quality singing voices efficiently by leveraging the adversarial training strategy. On one hand, we designed simple but generic random area conditional discriminators to help supervise the acoustic model, which can effectively avoid the over-smoothed spectrogram prediction by the duration-allocated Transformer-based acoustic model. On the other hand, we subtly combined the spectrogram with the frame-level linearly-interpolated F0 sequence as the input for the neural vocoder, which is then optimized with the help of multiple adversarial discriminators in the waveform domain and multi-scale distance functions in the frequency domain. The experimental results and ablation studies concluded that, compared with our previous auto-regressive work, our new system can produce high-quality singing voices efficiently by fine-tuning on different singing datasets covering several minutes to a few hours. Some synthesized singing samples are available online\footnote{https://zzw922cn.github.io/wesinger2}.</div>
+<div>This paper aims to introduce a robust singing voice synthesis (SVS) system to produce very natural and realistic singing voices efficiently by leveraging the adversarial training strategy. On one hand, we designed simple but generic random area conditional discriminators to help supervise the acoustic model, which can effectively avoid the over-smoothed spectrogram prediction and improve the expressiveness of SVS. On the other hand, we subtly combined the spectrogram with the frame-level linearly-interpolated F0 sequence as the input for the neural vocoder, which is then optimized with the help of multiple adversarial conditional discriminators in the waveform domain and multi-scale distance functions in the frequency domain. The experimental results and ablation studies concluded that, compared with our previous auto-regressive work, our new system can produce high-quality singing voices efficiently by fine-tuning different singing datasets covering from several minutes to a few hours. A large number of synthesized songs with different timbres are available online\footnote{https://zzw922cn.github.io/wesinger2} and we highly recommend readers to listen to them.</div>
 </blockquote>
 </div>
 <br/>
@@ -40,6 +41,187 @@
 .tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;border-color:#ccc;color:#333;background-color:#f0f0f0;}
 .tg .tg-9wq8{border-color:inherit;text-align:center;vertical-align:middle}
 </style>
+
+
+<h1 id="title"><font color="red">Following updated singing demos listed with red fonts(update date: 20221009).</font></h2>
+
+
+<h3 id="pred-dur"><font color="red">[update 1] Singing demos from different singers' adapted system with different Chinese pop songs</font></h3>
+<b>To show the robustness and performance, here we do not use ground-truth duration for length-regulator, we use predicted duration to match BGM instead.</b>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《失恋阵线联盟》with BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/失恋阵线联盟.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《泡沫》without BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/泡沫清唱版.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《去年夏天》with BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/去年夏天.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《七里香》with BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/七里香.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《小手拉大手》with BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/小手拉大手.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+  <tr>
+      <th class="tg-lboi"><b>Chinese pop song《失恋阵线联盟男高音版》with BGM</b></th>
+      <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/失恋阵线联盟男高音版.wav">
+            </audio>
+      </td>
+      </th>
+  </tr>
+
+</table>
+
+</blockquote>
+
+<h3 id="pred-dur"><font color="red">[update 2] Singing demos from different singers' adapted system with different kinds of user-defined lyrics and musical scores(not shown)</font></h3>
+<blockquote>
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>user-modifed lyrics</b></th>
+      <th class="tg-lboi">
+          欢迎大家来听我的歌唱合成分享</br>
+      </th>
+      <th class="tg-lboi">
+          欢迎大家来听我的歌唱合成分享</br>
+      </th>
+      <th class="tg-lboi">
+          欢迎大家来听我的歌唱合成分享</br>
+      </th>
+      <th class="tg-lboi">
+          欢迎大家来听我的歌唱合成分享</br>
+      </th>
+      <th class="tg-lboi">
+          欢迎大家来听我的歌唱合成分享</br>
+          这个唱得怎么样</br>
+      </th>
+  </tr>
+
+  <tr>
+        <th class="tg-lboi"><b><font color="black">Synthesized singing audios</font></b></th>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/welcome1.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/welcome2.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/welcome3.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/welcome4.wav">
+            </audio>
+        </td>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/welcome5.wav">
+            </audio>
+        </td>
+  </tr>
+
+</table>
+
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>user-modifed lyrics</b></th>
+      <th class="tg-lboi">
+          零三年的离别 在高考后的校园 一个个少年 在操场 肆意妄为</br>
+          从此没人关心 谁又 考了第一 因为失落不许人 回忆</br>
+          学习上若在意成绩 痛苦就多一个来源 人生起起伏伏</br>
+          不必太过焦虑 若不潇洒就是罪 二零八没有散席友谊常存</br>
+          联系的更紧密 毕业的我 原本以为 可能一辈子不相见</br>
+          二零八没有散席 同学相聚 不住笑的聊天</br>
+          让距离变的不再遥远 记住相互的美</br>
+      </th>
+  </tr>
+
+  <tr>
+        <th class="tg-lboi"><b><font color="black">Synthesized singing audios</font></b></th>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/毕业回忆填词版.wav">
+            </audio>
+        </td>
+
+  </tr>
+
+</table>
+
+<table class="tg">
+  <tr>
+      <th class="tg-lboi"><b>user-modifed lyrics</b></th>
+      <th class="tg-lboi">
+          找个好日子愿美好满载而归 老了有你陪每天幸福来点缀</br>
+          是谁的祝贺好运气年年岁岁 哦生活也不想白头与我去相偎</br>
+          日吉祥夜如意祝愿你平安顺遂 快到那时候将所谓都一起面对</br>
+          乐开怀地笑谈为崭新的岁月干杯</br>
+      </th>
+  </tr>
+
+  <tr>
+        <th class="tg-lboi"><b><font color="black">Synthesized singing audios</font></b></th>
+
+        <td class="tg-lboi">
+            <audio controls style="width: 140px;">
+                <source src="updated_demos/改词版七里香.wav">
+            </audio>
+        </td>
+
+  </tr>
+
+</table>
+</blockquote>
+
+
+<h1 id="title"><font color="black">Following singing voices are all predicted on the test set from SVS systems with Chinese lyrics and musical scores as input.</font></h2>
 
 <h2 id="GT"><font color="black">Selected ground-truth (GT) recordings of three singers for experiments</font></h2>
 <blockquote>
@@ -81,7 +263,6 @@
 
 </blockquote>
 
-<h2 id="title"><font color="black">Following singing voices are all predicted on the test set from SVS systems with Chinese lyrics and musical scores as input.</font></h2>
 
 <h3 id="pred-dur"><font color="#0DC23E">1. Selected predicted samples with ground-truth duration from WeSinger and WeSinger 2</font></h3>
 <blockquote>
