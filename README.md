@@ -1,5 +1,5 @@
 # WeSinger 2
-Singing demos for paper 《WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training》
+Singing demos for ICASSP 2023 paper 《WeSinger 2: Fully Parallel Singing Voice Synthesis via Multi-Singer Conditional Adversarial Training》
 
 [arxiv link](https://arxiv.org/abs/2207.01886) 
 
